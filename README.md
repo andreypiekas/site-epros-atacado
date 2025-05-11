@@ -1,71 +1,89 @@
-# Epros Atacado Distribuidor LTDA
+# 🏬 Epros Atacado Distribuidor LTDA
 
-Este repositório contém o código-fonte do site da Epros Atacado Distribuidor LTDA, uma empresa com uma tradição de mais de 25 anos no mercado atacadista. O site foi desenvolvido para ser moderno, responsivo e fácil de usar, proporcionando aos visitantes uma navegação intuitiva.
-Tecnologias Utilizadas
+Este repositório contém o código-fonte do site da **Epros Atacado Distribuidor LTDA**, uma empresa com mais de **25 anos de tradição** no mercado atacadista.
 
-HTML5 e CSS3: Para estruturar e estilizar o conteúdo do site.
-Tailwind CSS: Framework CSS utilizado para design responsivo e estilização eficiente.
-JavaScript: Para criar interações dinâmicas e aprimorar a experiência do usuário.
-Font Awesome: Biblioteca de ícones escaláveis usados em várias partes do site.
-Google Fonts: Utilizadas para melhorar a tipografia com as fontes 'Montserrat' e 'Open Sans'.
-Google Maps: Integração para exibir a localização física da empresa.
-Google reCAPTCHA: Implementação para proteção contra spam nos formulários de contato.
+O site foi desenvolvido para ser **moderno**, **responsivo** e **intuitivo**, proporcionando uma excelente experiência de navegação ao usuário.
 
-Estrutura do Projeto
-1. Cabeçalho e Navegação
+---
 
-Logotipo da empresa.
-Menu de navegação com links para as principais seções: Produtos, Sobre Nós, e Contato.
-Menu móvel responsivo para dispositivos menores.
+## 🚀 Tecnologias Utilizadas
 
-2. Sessão de Produtos
+- 🌐 **HTML5 & CSS3** – Estruturação e estilização do conteúdo.
+- 🎨 **Tailwind CSS** – Framework CSS para design responsivo e estilização eficiente.
+- ⚙️ **JavaScript** – Interações dinâmicas e melhoria da experiência do usuário.
+- ⭐ **Font Awesome** – Ícones escaláveis utilizados em diversas seções.
+- 🔤 **Google Fonts** – Tipografia com as fontes `Montserrat` e `Open Sans`.
+- 🗺️ **Google Maps** – Integração com mapa para exibição da localização da empresa.
+- 🛡️ **Google reCAPTCHA** – Proteção contra spam nos formulários de contato.
 
-Destaque para as principais categorias de produtos.
-Funcionalidade de alternância para exibir mais categorias dinamicamente.
+---
 
-3. Sobre Nós
+## 🗂️ Estrutura do Projeto
 
-Informação detalhada sobre a empresa, história, missão, visão e valores.
-Imagens representativas da empresa e dos produtos.
+### 1. 📌 Cabeçalho e Navegação
+- Logotipo da empresa.
+- Menu com links para:
+  - Produtos
+  - Sobre Nós
+  - Contato
+- Menu móvel responsivo para dispositivos menores.
 
-4. Depoimentos
+### 2. 🛒 Sessão de Produtos
+- Destaque das principais categorias.
+- Alternância dinâmica para exibir mais categorias.
 
-Seção dedicada a depoimentos de clientes, incluindo classificação por estrelas.
+### 3. 🏢 Sobre Nós
+- História, missão, visão e valores da empresa.
+- Imagens institucionais.
 
-5. Contato
+### 4. 💬 Depoimentos
+- Comentários de clientes.
+- Sistema de avaliação com estrelas.
 
-Informações extensas de contato, incluindo endereço, telefone e e-mail.
-Formulário de contato com proteção do Google reCAPTCHA.
-Integração com o Google Maps para mostrar a localização.
+### 5. 📞 Contato
+- Endereço, telefone e e-mail.
+- Formulário protegido com reCAPTCHA.
+- Mapa integrado do Google Maps.
 
-6. Rodapé
+### 6. 🔗 Rodapé
+- Links úteis de navegação.
+- Informações de contato resumidas.
 
-Links úteis de navegação para facilitar o acesso a diferentes partes do site.
-Informações de contato resumidas.
+---
 
-Recursos Utilizados
+## 📚 Recursos Utilizados
 
-Font Awesome: Ícones Font Awesome
-Tailwind CSS: Documentação do TailwindCSS
-Google reCAPTCHA: Google reCAPTCHA
-Google Maps: Integração para exibição de mapas integrados.
+- [📦 Font Awesome](https://fontawesome.com/)
+- [💎 Tailwind CSS](https://tailwindcss.com/)
+- [🛡️ Google reCAPTCHA](https://www.google.com/recaptcha/)
+- [🗺️ Google Maps](https://www.google.com/maps)
 
-Como Contribuir
-Este projeto foi elaborado e é mantido por Andrey Piekas. Para contribuir com melhorias, detectar problemas ou fazer sugestões, por favor entre em contato através do perfil do LinkedIn.
-Capturas de Tela
-Cabeçalho e Navegação
+---
 
-Categorias de Produtos
+## 🤝 Como Contribuir
 
-Sobre Nós
+Este projeto é mantido por **Andrey Piekas**.  
+Para sugerir melhorias, reportar bugs ou colaborar, entre em contato via [LinkedIn](https://www.linkedin.com/).
 
-Depoimentos
+---
 
-Mapa & Contato
+## 🖼️ Capturas de Tela
 
-Rodapé
+- ✅ Cabeçalho e Navegação  
+- 📂 Categorias de Produtos  
+- 🏢 Sobre Nós  
+- 🌟 Depoimentos  
+- 🗺️ Mapa & Contato  
+- 🔻 Rodapé  
 
-Licença
-Este projeto é licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
-Considerações Finais
-O site da Epros Atacado foi criado para maximizar a experiência do usuário final, com um design intuitivo e uma navegação fácil, garantindo que os clientes possam acessar informações e produtos facilmente.
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License**
+
+---
+
+## ✨ Considerações Finais
+
+O site da **Epros Atacado** foi idealizado para **maximizar a experiência do usuário**, com design claro e fluído, permitindo que os visitantes encontrem rapidamente o que precisam com praticidade e eficiência.
