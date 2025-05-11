@@ -60,7 +60,7 @@ O site foi desenvolvido para ser **moderno**, **responsivo** e **intuitivo**, pr
 
 ---
 
-## 🤝 Como Contribuir
+## 🤝 Como Contribuir ou me Contatar
 
 Este projeto é mantido por **Andrey Piekas**.  
 Para sugerir melhorias, reportar bugs, colaborar ou solicitar orçamentos, entre em contato via [LinkedIn](https://www.linkedin.com/in/andreypiekas/).
