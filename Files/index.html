@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epros Atacado Distribuidor LTDA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .zoom-image {
+            transition: transform 0.3s ease;
+        }
+        .zoom-image:hover {
+            transform: scale(1.05);
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .brand-card {
+            transition: all 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        /* Ensure smooth visibility transitions */
+        .hidden-item {
+            display: none;
+            transition: display 0.3s ease-in-out;
+        }
+        .visible-item {
+            display: block;
+            transition: display 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 w-full">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="logo.svg" alt="Epros Atacado Logo" class="h-16">
+            </a>
+            <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                <a href="https://wa.me/554933292095" target="blank" class="hidden md:flex flex-col items-center hover:text-[#FF6600]">
+                    <i class="fas fa-headset text-2xl text-[#003366]"></i>
+                    <span class="text-sm">Atendimento</span>
+                </a>
+                <a href="#mapa" class="hidden md:flex flex-col items-center hover:text-[#FF6600]">
+                    <i class="fas fa-map-marker-alt text-2xl text-[#003366]"></i>
+                    <span class="text-sm">Localização</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="bg-[#003366] text-white">
+        <div class="container mx-auto px-4">
+            <div class="hidden md:flex justify-between items-center">
+                <a href="#categories" class="px-4 py-3 hover:bg-[#FF6600]">LINHA DE PRODUTOS</a>
+                <a href="#about" class="px-4 py-3 hover:bg-[#FF6600]">SOBRE NÓS</a>
+                <a href="#contact" class="px-4 py-3 hover:bg-[#FF6600]">CONTATO</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex justify-between items-center py-3">
+                <button class="text-white focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-[#003366] text-white py-4 px-4" id="mobile-menu">
+        <div class="flex flex-col space-y-3">
+            <a href="#categories" class="px-3 py-2 hover:bg-[#FF6600] rounded">LINHA DE PRODUTOS</a>
+            <a href="#about" class="px-3 py-2 hover:bg-[#FF6600] rounded">SOBRE NÓS</a>
+            <a href="#contact" class="px-3 py-2 hover:bg-[#FF6600] rounded">CONTATO</a>
+        </div>
+    </div>
+    <!-- Categories -->
+    <section class="py-12 bg-white" id="categories">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#003366]">LINHA DE PRODUTOS</h2>
+            <!-- Contêiner dos cards -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Bazar -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-utensils text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Bazar</p>
+                    </div>
+                </div>
+                <!-- Brinquedos -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-gamepad text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Brinquedos</p>
+                    </div>
+                </div>
+                <!-- Cama, Mesa e Banho -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-bed text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Cama, Mesa e Banho</p>
+                    </div>
+                </div>
+                <!-- Calçados -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-shoe-prints text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Calçados</p>
+                    </div>
+                </div>
+                <!-- Guarda-Chuvas -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-umbrella text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Guarda-Chuvas</p>
+                    </div>
+                </div>
+                <!-- Produtos para Pets -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-paw text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Produtos para Pets</p>
+                    </div>
+                </div>
+                <!-- Utilidades Domésticas -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-blender text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Utilidades Domésticas</p>
+                    </div>
+                </div>
+                <!-- Importados -->
+                <div class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-globe text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Importados</p>
+                    </div>
+                </div>
+                <!-- Café (oculto inicialmente) -->
+                <div id="categoria-cafe" class="w-44 sm:w-52 bg-white border border-gray-200 rounded-lg text-center shadow hover:shadow-md transition hidden-item">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-14 h-14 bg-[#003366] text-white flex items-center justify-center rounded-full mb-3">
+                            <i class="fas fa-coffee text-xl"></i>
+                        </div>
+                        <p class="text-[#003366] font-semibold text-sm sm:text-base">Café</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Botão para mostrar mais -->
+            <div class="text-center mt-8">
+                <button id="toggle-categories-btn" class="bg-[#003366] hover:bg-[#002244] text-white px-6 py-3 rounded-lg font-medium">
+                    VER TODAS AS LINHA DE PRODUTOS
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- About Us -->
+    <section class="py-12 bg-white" id="about">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="logo.svg" alt="Sobre a Epros Atacado" style="width: 500px;" class="mx-auto rounded-lg shadow-md zoom-image">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-[#003366]">SOBRE NÓS</h2>
+                    <p class="mb-4">Fundada em 2 de janeiro de 1997, a Epros Atacado Distribuidor LTDA tem se destacado no mercado atacadista com uma ampla variedade de produtos de qualidade.</p>
+                    <p class="mb-4">Localizada em Chapecó, SC, nos orgulhamos de oferecer excelência em atendimento e satisfação do cliente, com preços competitivos para revendedores e comerciantes.</p>
+                    <p class="mb-6">Nossa missão é fornecer produtos diversificados que atendam às necessidades de nossos clientes, garantindo sempre a melhor relação custo-benefício.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="inline-block bg-[#FF6600] hover:bg-[#e65c00] text-white px-6 py-2 rounded-lg font-medium">CONTATO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mission, Vision, and Values Block -->
+    <section class="py-12 bg-gray-100" id="mission-vision-values">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-[#003366]">NOSSA MISSÃO, VISÃO E VALORES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#003366]">Missão</h3>
+                    <p>Distribuir produtos promovendo o crescimento e satisfação de todos os envolvidos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#003366]">Visão</h3>
+                    <p>Ser um dos melhores distribuidores do país, primando pelo relacionamento e crescimento mútuo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#003366]">Valores</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>União:</strong> Comprometimento com todos os envolvidos.</li>
+                        <li><strong>Ética:</strong> Cumprir o acordado, com transparência.</li>
+                        <li><strong>Inovação:</strong> Buscar sempre a melhoria contínua.</li>
+                        <li><strong>Simplicidade:</strong> Tornar os processos fáceis e claros.</li>
+                        <li><strong>Valorização:</strong> Promover o crescimento humano e profissional.</li>
+                        <li><strong>Respeito:</strong> Tratar todos com dignidade e educação.</li>
+                        <li><strong>Sustentabilidade:</strong> Atuar com responsabilidade econômica, social e ambiental.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#003366]">O QUE NOSSOS CLIENTES DIZEM</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">Há 1 semana</span>
+                    </div>
+                    <p class="mb-4">"Excelente atendimento e produtos de qualidade. Sempre compro aqui para meu comércio e nunca tive problemas."</p>
+                    <div class="flex items-center">
+                        <img src="joao.png" alt="Cliente" class="w-10 h-10 rounded-full mr-3" style="width: 50px; height: 50px;">
+                        <div>
+                            <h4 class="font-semibold">João Silva</h4>
+                            <p class="text-sm text-gray-500">Revendedor em Chapecó/SC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">Há 3 semanas</span>
+                    </div>
+                    <p class="mb-4">"Ótimos preços para atacado e entrega rápida. Recomendo para quem precisa abastecer seu comércio com produtos de qualidade."</p>
+                    <div class="flex items-center">
+                        <img src="maria.png" alt="Cliente" class="w-10 h-10 rounded-full mr-3" style="width: 50px; height: 50px;">
+                        <div>
+                            <h4 class="font-semibold">Maria Oliveira</h4>
+                            <p class="text-sm text-gray-500">Comerciante em Xanxerê/SC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">Há 1 mês</span>
+                    </div>
+                    <p class="mb-4">"Atendimento personalizado e preços imbatíveis. A Epros é minha principal fornecedora há mais de 5 anos."</p>
+                    <div class="flex items-center">
+                        <img src="carlos.png" alt="Cliente" class="w-10 h-10 rounded-full mr-3" style="width: 50px; height: 50px;">
+                        <div>
+                            <h4 class="font-semibold">Carlos Souza</h4>
+                            <p class="text-sm text-gray-500">Dono de loja em Erechim/RS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="py-12 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#003366]">ENTRE EM CONTATO</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-[#003366]">INFORMAÇÕES DE CONTATO</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-[#FF6600] mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Endereço</h4>
+                                    <p>Rua Quatorze de Agosto, 3161-E</p>
+                                    <p>Bairro Líder, Chapecó - SC</p>
+                                    <p>CEP: 89805-390</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-[#FF6600] mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Telefone</h4>
+                                    <p>(49) 3329-2095</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-[#FF6600] mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">E-mail</h4>
+                                    <p>contato@eprosatacado.com.br</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-[#FF6600] mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Horário de Funcionamento</h4>
+                                    <p>Segunda a Sexta: 08:00 - 18:00</p>
+                                    <p>Sábado: 08:00 - 12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="font-semibold mb-2">Siga-nos</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/EprosAtacadoDistribuidor/?locale=ptBR" target="blank"
+                                   class="text-[#003366] hover:text-[#FF6600] text-xl"
+                                   aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-[#003366]">ENVIE UMA MENSAGEM</h3>
+                        <form action="https://submit-form.com/94XhPPSe1" method="POST" class="bg-white shadow-md rounded-lg p-8">
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-semibold mb-2">Nome</label>
+                                <input type="text" id="name" name="name" placeholder="Seu Nome" required=""
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#FF6600]" />
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Seu Email" required=""
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#FF6600]" />
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-semibold mb-2">Mensagem</label>
+                                <textarea id="message" name="message" placeholder="Sua Mensagem" required=""
+                                          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#FF6600] h-32"></textarea>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="g-recaptcha" data-sitekey="SITE-KEY_"></div>
+                                <button type="submit" class="ml-3 bg-[#FF6600] hover:bg-[#e65c00] text-white font-medium px-5 py-2 rounded-lg transition-colors duration-300">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map -->
+    <div id="mapa" class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.6234792604687!2d-52.6109393!3d-27.073630400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b67a368202c5%3A0xee0e3f17abf7b127!2sEpros%20Atacado%20Distribuidor%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1746895202180!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-[#003366] text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EPROS ATACADO</h3>
+                    <p class="mb-4">Distribuidor atacadista com mais de 25 anos no mercado, oferecendo produtos de qualidade para todo o Brasil.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">LINKS ÚTEIS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-[#FF6600]">Sobre Nós</a></li>
+                        <li><a href="#categories" class="hover:text-[#FF6600]">Linha de Produtos</a></li>
+                        <li><a href="#contact" class="hover:text-[#FF6600]">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">CONTATO</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Quatorze de Agosto, 3161-E</p>
+                        <p class="mb-2">Bairro Líder, Chapecó - SC</p>
+                        <p class="mb-2">CEP: 89805-390</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> (49) 3329-2095</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> contato@eprosatacado.com.br</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/554933292095" class="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center w-14 h-14">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        // Categories Toggle
+        document.getElementById("toggle-categories-btn").addEventListener("click", function () {
+            const cafe = document.getElementById("categoria-cafe");
+            const isVisible = !cafe.classList.contains("hidden-item");
+            cafe.classList.toggle("hidden-item");
+            cafe.classList.toggle("visible-item");
+            this.textContent = isVisible ? "VER TODAS AS LINHA DE PRODUTOS" : "MOSTRAR MENOS";
+        });
+    </script>
+    <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px; position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">
+        Feito por
+        <a href="https://www.linkedin.com/in/andreypiekas/" style="color: #fff; text-decoration: underline;" target="blank">Andrey Piekas</a>
+    </p>
+</body>
+</html>
